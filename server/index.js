@@ -101,8 +101,8 @@ app.post("/compile", async (req, res) => {
       script: code,
       language: language,
       versionIndex: languageConfig[language].versionIndex,
-      clientId: process.env.jDoodle_clientId,
-      clientSecret: process.env.kDoodle_clientSecret,
+      clientId: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
     });
 
     res.json(response.data);
@@ -112,5 +112,5 @@ app.post("/compile", async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => console.log(`Server is runnint on port ${PORT}`));
