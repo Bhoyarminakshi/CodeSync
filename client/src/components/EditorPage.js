@@ -141,9 +141,18 @@ function EditorPage() {
             src="/images/codecast.png"
             alt="Logo"
             className="img-fluid mx-auto"
-            style={{ maxWidth: "150px", marginTop: "-43px" }}
+            style={{ width: "100%",
+    padding: "15px 10px 5px 10px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    overflow: "hidden",           // 👈 Prevents logo from going down
+    height: "90px",               // 👈 Controlled height for perfect fit
+    boxSizing: "border-box", }}
           />
-          <hr style={{ marginTop: "-3rem" }} />
+          
+          
+          <hr style={{ margin: "10px 0" }} />
 
           {/* Client list container */}
           <div className="d-flex flex-column flex-grow-1 overflow-auto">

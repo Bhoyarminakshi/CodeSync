@@ -32,3 +32,9 @@
   overflow-y: auto;
   border: 1px solid #ced4da;
 }
+.logo {
+    position: fixed;
+    top: 10px;     /* distance from top */
+    left: 10px;    /* distance from left */
+    z-index: 999;  /* keeps it above everything */
+}
